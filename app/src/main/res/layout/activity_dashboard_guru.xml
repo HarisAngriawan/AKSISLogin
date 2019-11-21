@@ -1,0 +1,220 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".DashboardGuru">
+
+    <ImageView
+        android:background="@drawable/color_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_weight="1.2"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <ImageView
+                android:src="@drawable/kepala_sekolah"
+                android:background="@color/colorPrimary"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/arya"
+                android:text="Selamat Datang"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/arya"
+                android:text="Keterangan Login"
+                android:id="@+id/nama_login"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/arya"
+                android:text="NPSN"
+                android:id="@+id/NPSN"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/dPelanggaran"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorPrimary"
+                    android:drawableTop="@drawable/pelanggaran"
+                    android:fontFamily="@font/bitter"
+                    android:padding="5dp"
+                    android:text="Detail Pelanggaran Siswa"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/kehadiran"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorPrimary"
+                    android:drawableTop="@drawable/jurusan"
+                    android:fontFamily="@font/bitter"
+                    android:padding="5dp"
+                    android:text="Kehadiran Siswa"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginBottom="20dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/prestasi"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorPrimary"
+                    android:drawableTop="@drawable/prestasi"
+                    android:fontFamily="@font/bitter"
+                    android:padding="8dp"
+                    android:text="Prestasi Siswa"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/ldSiswa"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorPrimary"
+                    android:drawableTop="@drawable/siswa"
+                    android:fontFamily="@font/bitter"
+                    android:padding="5dp"
+                    android:text="Data Siswa"
+                    android:textSize="12dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/kSurat"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorPrimary"
+                    android:drawableTop="@drawable/letter"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:padding="5dp"
+                    android:text="Panggilan Orang tua Siswa"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/find_alumni"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorPrimary"
+                    android:drawableTop="@drawable/search"
+                    android:fontFamily="@font/bitter"
+                    android:padding="3dp"
+                    android:text="Penelusuran Alumni"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="#0003A9F4"
+            android:layout_marginTop="-10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/konseling"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="-7dp"
+                    android:background="@color/colorPrimary"
+                    android:drawableTop="@drawable/konseling"
+                    android:fontFamily="@font/bitter"
+                    android:padding="5dp"
+                    android:text="Catatan Konseling"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/homevisit"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/colorPrimary"
+                    android:drawableTop="@drawable/home_visit"
+                    android:fontFamily="@font/bitter"
+                    android:padding="5dp"
+                    android:text="Home Visit"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
